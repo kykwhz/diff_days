@@ -98,3 +98,11 @@ print(f'diff_days(2000,1,1,2000,12,31) : {diff_days(2000,1,1,2000,12,31)}')
 print(f'diff_days(2000,1,1,2001,1,1) : {diff_days(2000,1,1,2001,1,1)}')
 print(f'diff_days(2000,1,1,2001,12,31) : {diff_days(2000,1,1,2001,12,31)}')
 print(f'diff_days(1999,12,31,2001,1,1) : {diff_days(1999,12,31,2001,1,1)}')
+
+"datetime.pyから引っ張ってきた"
+def _is_leap(year):
+    "year -> 1 if leap year, else 0."
+    return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)
+
+def test():
+	"aあいうえお" # この行頭のダブルクォーテーションのリテラル？は、コメントみたいな形として人間には扱われるのか？
